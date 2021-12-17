@@ -11,14 +11,14 @@ class Atendimento {
         const validacoes = [
             {
                 nome: 'data',
-                valido = dataEhValida,
+                valido : dataEhValida,
                 mensagem: 'Data deve ser maior ou igual a data atual'
             },
 
             {
                 nome: 'cliente',
-                valido = clienteEhValido,
-                mensagem = 'Cliente deve ter pelo menos 4 caracteres'
+                valido : clienteEhValido,
+                mensagem : 'Cliente deve ter pelo menos 4 caracteres'
             }
         ]
         const erros = validacoes.filter(campo => !campo.valido)
